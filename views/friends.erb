@@ -7,9 +7,10 @@
  </head>
  <body>
   <h1> My Super Cool Friends List </h1>
-
+        <ol><% @friends.each do |friend| %>
+            <li><%= friend %></li>
+        <% end %></ol> 
+    
   <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
-
-
  </body>
 </html>
